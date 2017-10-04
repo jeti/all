@@ -21,38 +21,4 @@ android {
 
 dependencies {
     testImplementation 'junit:junit:4.12'
-    compile 'io.jeti:android:1.0.0'
-    compile 'io.jeti:java:1.0.0'
 }
-
-ext {
-
-    bintrayRepo = 'io'
-    bintrayName = 'all'
-
-    publishedGroupId = 'io.jeti'
-    libraryName = 'all'
-    artifact = 'all'
-
-    libraryDescription = 'A collection of all of the jeti.io packages.'
-
-    siteUrl = 'https://github.com/jeti/all'
-    gitUrl = 'https://github.com/jeti/all.git'
-
-    libraryVersion = '1.0.1'
-
-    developerId = 'jeti'
-    developerName = 'Matthew Holzel'
-    developerEmail = 'matthew.holzel@gmail.com'
-
-    organization = 'jeti'
-
-    licenseName = 'The Apache Software License, Version 2.0'  //Example for license
-    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-    allLicenses = ["Apache-2.0"]
-
-}
-
-//These two remote files contain Bintray configuration as described above.
-apply from: 'https://raw.githubusercontent.com/jeti/jcenter/master/install.gradle'
-apply from: 'https://raw.githubusercontent.com/jeti/jcenter/master/bintray.gradle'
